@@ -1,0 +1,121 @@
+body {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-size: cover;
+    background-image: url(img.png);
+}
+
+.search {
+    display: flex;
+    gap: 20px;
+}
+button {
+    background-color: rgb(224 231 239);
+    border-radius: 20px;
+}
+button img {
+    width: 20px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 img {
+    width: 30px;
+}
+input {
+    border-radius: 20px;
+    width: 200px;
+    border: none;
+    padding: 8px 12px;
+}
+p {
+    color: black;
+}
+.holder {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 198px;
+}
+.photo {
+    display: flex;
+}
+#A {
+    width: 16px;
+}
+.info {
+    background-color: rgb(224 231 239);
+    padding: 40px;
+    border-radius: 16px;
+}
+.info p {
+    color: black;
+}
+.temp img {
+    width: 20px;
+}
+
+#AA img {
+    width: 40px;
+}
+.box {
+    background-color: rgb(224 231 239);
+    padding: 20px;
+    border-radius: 16px;
+}
+.box p {
+    color: black;
+}
+.footer {
+    width: 100%;
+    margin-top: 30px;
+}
+.footer hr {
+    height: 3px;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+}
+.times {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.celcieus {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+    .holder {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .info {
+        padding: 18px;
+        text-align: center;
+    }
+    .photo {
+        justify-content: center;
+    }
+    .box {
+        text-align: center;
+    }
+    .box p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

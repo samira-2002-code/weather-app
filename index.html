@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>weather-app</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body class="body-light">
+
+        <h1>
+            <img src="place.png" />
+            <span id="ville">Berlin,Deutschland </span><img src="down.png" />
+            <button id="night" onclick="modeDarkAndLight()">Night mood</button>
+            
+        </h1>
+        <div class="search">
+            <input
+                type="text"
+                placeholder="Enter your position"
+                id="input"
+            /><button id="B">
+                <img src="src.png" />
+            </button>
+        </div>
+        <p id="date">Montag,dezember 15</p>
+        <div class="holder">
+            <div class="info">
+                <div class="photo">
+                    <img class="picture" src="animated/day.svg" alt="">
+                <h2><span id="temp">11 </span><img id="A" src="c1.png" /></h2>
+                </div>
+                <p id="weather">STORM WITH RAIN</p>
+                <div class="temp">
+                    <p>
+                        <img class="icon1" src="wind.svg" /> Wind
+                        <span id="wind">1O</span> km/h
+                    </p>
+                    <p>
+                        <img class="icon2" src="humidity.svg" /> Humidity
+                        <span id="humidity">13</span>%
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <p id="AA"><img src="animated/day.svg" /> Friday 18° Sunny</p>
+                <p id="AA"><img src="animated/cloudy-day-1.svg" /> Saturday 10° couldy</p>
+                <p id="AA"><img src="animated/rainy-3.svg" /> Sunday 10° Rain</p>
+                <p id="AA">
+                    <img src="animated/thunder.svg" /> Monday 8° rain with thinders
+                </p>
+                <p id="AA"><img src="animated/day.svg" /> Tuesday 15° Sunny</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="times">
+                <div class="temp1">
+                    <span>14:00</span>
+                </div>
+
+                <div class="temp2">
+                    <span>15:00</span>
+                </div>
+                <div class="temp3">
+                    <span>16:00</span>
+                </div>
+                <div class="temp4">
+                    <span>17:00</span>
+                </div>
+            </div>
+            <hr />
+            <div class="celcieus">
+                <div><span> 22° </span></div>
+                <div><span> 19° </span></div>
+                <div><span> 18° </span></div>
+                <div><span> 7° </span></div>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
