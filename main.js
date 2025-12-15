@@ -23,8 +23,16 @@ function conectIpA(city) {
             "&appid=727241f8a93f7531a36c97c99c903101&units=metric"
     )
         .then((res) => res.json())
+
         .then((data) => {
-            console.log(data);
+
+            if (data.cod == '404') {
+                alert("city not found")
+                 return;
+
+
+            }           
+          
             cityName.innerHTML = data.name;
             humidity.innerHTML = data.main.humidity;
             wind.innerHTML = data.wind.speed;
@@ -42,7 +50,7 @@ function conectIpA(city) {
             let iconSRc = iconPicture[conditions] || "animated/day.svg";
             document.querySelector(".picture").src = iconSRc;
         })
-        .catch((error) => console.log(error));
+        
 }
 
 let change = document.getElementById("night")
@@ -57,8 +65,7 @@ function modeDarkAndLight(){
     let back1 = document.querySelector(".info");
     let back2 = document.querySelector(".box");
     let button = document.querySelector("#night");
-    let icon1 = document.querySelector(".icon1");
-    let icon2 = document.querySelector(".icon2");
+  
 
     if(modedark == false){
         modedark = true;
